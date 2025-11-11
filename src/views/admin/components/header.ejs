@@ -1,0 +1,154 @@
+<style>
+/* Sidebar logo style */
+.menu-header-logo img {
+  width: 100% !important;
+  height: 60px;
+  margin: 5%;
+}
+
+/* Sidebar background */
+.menu {
+  background-color: black !important;
+  margin: 0;
+}
+
+/* Responsive logo size */
+@media (max-width: 992px) {
+  .menu-header-logo img {
+    width: 50% !important;
+    height: 60px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+/* Custom text logo styling */
+#main_logo {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(0, 191, 255, 0.5);
+  border-bottom: 2px solid #00bfff;
+  display: inline-block;
+  padding-bottom: 3px;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Blue highlight for the “Reserve” part */
+#main_logo span {
+  color: #00bfff;
+}
+
+/* Hover glow effect */
+#main_logo:hover {
+  text-shadow: 0 0 15px rgba(0, 191, 255, 0.8);
+  border-bottom-color: #ffffff;
+}
+
+/* Smaller text for mobile view */
+@media (max-width: 480px) {
+  #main_logo {
+    font-size: 1.2rem;
+    border-bottom: 1.5px solid #00bfff;
+    text-shadow: none;
+  }
+}
+</style>
+
+<!-- Admin sidebar menu -->
+<div class="menu text-white">
+  <div class="menu-header">
+    <!-- Disabled logo link (not clickable anymore) -->
+    <div class="menu-header-logo text-decoration-none">
+      <h1 id="main_logo">
+        Opti-<span>Reserve</span>
+      </h1>
+    </div>
+
+    <!-- Sidebar close button -->
+    <a href="#" class="btn btn-sm menu-close-btn" style="color:#DDB778; background-color:transparent;">
+      <i class="bi bi-x"></i>
+    </a>
+  </div>
+
+  <!-- Sidebar links -->
+  <div class="menu-body text-white">
+    <ul>
+      <!-- Bookings section -->
+      <li class="nav-item custom-dropdown">
+        <a class="nav-link custom-dropdown-toggle" href="#" id="navbarDropdown" role="button">
+          <span class="nav-link-icon">
+            <img src="/assets/User/img/calendar.png" alt="">
+          </span>
+          <span>Manage Bookings</span>
+        </a>
+        <ul class="custom-dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a href="/categories">Manage Resources Categories</a></li>
+          <li><a href="/resources/list">Manage Resources</a></li>
+        </ul>
+      </li>
+
+      <!-- SEO section -->
+      <li>
+        <a href="#">
+          <span class="nav-link-icon" style="background-color: black">
+            <img src="/assets/admin/dist/icons/target.png" alt="">
+          </span>
+          <span>Manage SEO Tags</span>
+        </a>
+      </li>
+
+      <!-- Users section -->
+      <li>
+        <a href="#">
+          <span class="nav-link-icon" style="background-color: black">
+            <img src="/assets/admin/dist/icons/target.png" alt="">
+          </span>
+          <span>Manage Users</span>
+        </a>
+      </li>
+
+      <!-- Banners section -->
+      <li>
+        <a href="#">
+          <span class="nav-link-icon" style="background-color: black">
+            <img src="/assets/admin/dist/icons/image.png" alt="">
+          </span>
+          <span>Manage Banners</span>
+        </a>
+      </li>
+
+      <!-- Gallery section -->
+      <li>
+        <a href="#">
+          <span class="nav-link-icon" style="background-color: black">
+            <img src="/assets/admin/dist/icons/image.png" alt="">
+          </span>
+          <span>Manage Gallery</span>
+        </a>
+      </li>
+
+      <!-- Booking requests -->
+      <li>
+        <a href="#">
+          <span class="nav-link-icon">
+            <img src="/assets/admin/dist/icons/phone-call.png" alt="">
+          </span>
+          <span>Booking Requests</span>
+        </a>
+      </li>
+
+      <!-- Contact -->
+      <li>
+        <a href="#">
+          <span class="nav-link-icon">
+            <img src="/assets/admin/dist/icons/phone-call.png" alt="">
+          </span>
+          <span>Contact Us</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
